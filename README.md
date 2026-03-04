@@ -97,6 +97,7 @@ You must create a class that represents **one row** of your dataset.
 - Any additional analysis/helper methods as needed  
 
 ### ✏ Include your class diagram
+<img width="532" height="277" alt="image" src="https://github.com/user-attachments/assets/b444e1db-800d-4e52-9020-c201f2b4fdd7" />
 
 
 ---
