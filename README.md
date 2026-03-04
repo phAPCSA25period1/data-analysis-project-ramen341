@@ -66,12 +66,11 @@ UML_Diagram.png (or UML_Diagram.pdf)
 
 ## 🧩 Step 1 — Choose Your Dataset
 
-**Dataset Name:**  
-**Source / Link:**  
+**Dataset Name: State Drug Data**  
+**Source / Link: StateData2020-CDC-Census.xlsx**  
 
 **What this dataset contains (2–3 sentences):**  
-____________________________________________________________________  
-____________________________________________________________________  
+This data set contains state drug data like drug death rate, or overall drug deaths, it also includes the firearm death rate as a bonus. So, this data set is very strong in anylyzing drug abuse per state and the presence of drugs in certain states. 
 
 ---
 
@@ -80,14 +79,8 @@ ____________________________________________________________________
 Your guiding question should be something you can answer using your dataset.
 
 **My guiding question:**  
-____________________________________________________________________  
-____________________________________________________________________  
+Which state has the highest drug death rate?  
 
-Examples:
-
-- "Which Pokémon has the highest HP?"  
-- "What is the average life expectancy in this dataset?"  
-- "Which state had the highest vaccination rate?"  
 
 ---
 

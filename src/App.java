@@ -1,5 +1,6 @@
 import java.io.File;
-
+import java.util.Scanner;
+import java.io.FileNotFoundException;
 /**
  * Main application for the Data Analysis Mini‑Project.
  *
@@ -15,38 +16,24 @@ import java.io.File;
  */
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException{
 
         // TODO: Update this with your CSV file path
-        File file = new File("data/your_dataset.csv");
-
-        // TODO: Create an array of Data objects to store data
-
-
-        // TODO: Read file using Scanner
-        // - Skip header if needed
-        // - Loop through rows
-        // - Split each line by commas
-        // - Convert text to numbers when needed
-        // - Create new Data objects
-        // - Add to your array
-
-
-        // TODO: Call your analysis methods
-        // Example:
-        // double maxValue = findMaxValue(dataList);
-        // double average = computeAverageValue(dataList);
-
-
-        // TODO: Print insights
-        // - Number of rows loaded
-        // - Min, max, average, or any other findings
-        // - Final answer to your guiding question
-
-
-        // OPTIONAL TODO:
-        // Add user interaction:
-        // Ask the user what kind of analysis they want to see
+        File file = new File("StateData2020-CDC-Census(StateData2020-CDC-Census).csv");
+        Scanner scan = new Scanner(file);
+        scan.nextLine(); // Skip header line
+        int i = 0;
+        StateDrugData[] stateDrugDatas = new StateDrugData[52];
+        while(scan.hasNext()){
+            String[] line = scan.nextLine().split(",");
+            StateDrugData newData = new StateDrugData(line[0], Double.parseDouble(line[5]), Integer.parseInt(line[6]));
+            stateDrugDatas[i] = newData;
+            i++;
+        }
+        System.out.println(StateDrugData.getHighestDrugDeathRate(stateDrugDatas));
+        System.out.println(StateDrugData.getAverageDrugDeathRate(stateDrugDatas));
+        scan.close();
+   
     }
 
 
